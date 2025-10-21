@@ -1,3 +1,5 @@
+CREATE DATABASE  IF NOT EXISTS `camila_database` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `camila_database`;
 -- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
 -- Host: localhost    Database: camila_database
@@ -24,11 +26,8 @@ DROP TABLE IF EXISTS `data`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `data` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `dispositivo` varchar(50) DEFAULT NULL,
-  `categoria` varchar(50) DEFAULT NULL,
   `variavel` varchar(50) DEFAULT NULL,
-  `valor` float DEFAULT NULL, 
-  `unidade` varchar(20) DEFAULT NULL,
+  `valor` float DEFAULT NULL,
   `data_hora` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -52,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-09-30 16:12:39
+-- Dump completed on 2025-10-21 13:04:18
